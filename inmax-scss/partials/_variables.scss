@@ -1,0 +1,36 @@
+$color-white : #FFFFFF;
+$bg-color: #3FC1C9;
+$bg-color-1: rgba(63,193,201,0.3);
+$bg-color-2: #F9ED69;
+$bg-color-3: #2CB1B9;
+$bg-box-icon: rgba(249,197,102,0.1);
+$bg-box-icon-1: rgba(249,197,102,0.5);
+$color-border: #11999E;
+$color-border-1: #F9C566;
+$color-font-1: #A0FFEE;
+$color-font-2: #0D2B3E;
+$color-font-3: #566B78;
+$color-font-4: #DFDFDF;
+$color-font-5: #EB7F00;
+$color-font-6: #ABEDD8;
+$color-font-7: #FF5722;
+$color-font-8: #B9E937;
+$color-font-9: #B5E750;
+$color-font-10: #BFEB5D;
+$bg-footer: #566B78;
+$bg-hover: #13829B;
+
+// $vw-mobile: 767px;
+// $vw-ipad-potrait : 1023px;
+// $vw-ipad-landscape : 1279px;
+
+
+$vw-mobile: 704px;
+$vw-ipad-potrait : 984px;
+$vw-ipad-landscape : 1214px; //
+
+
+// mobile 0 ~ 767 -> break small
+// ipad potrait 768 ~ 1023 ->  
+// ipad lanscape 1024 ~ 1279
+// desktop 1280 ~ emboh

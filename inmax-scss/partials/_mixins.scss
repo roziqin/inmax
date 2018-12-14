@@ -1,0 +1,60 @@
+/*transition*/
+@mixin transition($transition...) {
+  -moz-transition:    $transition;
+  -o-transition:      $transition;
+  -webkit-transition: $transition;
+  transition:         $transition;
+}
+/*transition*/
+@mixin clearer(){
+  &:before,&:after{
+    display: table;
+    line-height: 0;
+    content: "";
+    clear: both;
+  }
+}
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+// rotate
+@mixin rotate ($deg) {
+  @include transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin scale($scale) {
+  @include transform(scale($scale));
+}
+// translate
+@mixin translate ($x, $y) {
+  @include transform(translate($x, $y));
+}
+// skew
+@mixin skew ($x, $y) {
+  @include transform(skew(#{$x}deg, #{$y}deg));
+}
+//transform origin
+@mixin transform-origin ($origin) {
+  moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  -ms-transform-origin: $origin;
+  -webkit-transform-origin: $origin;
+  transform-origin: $origin;
+}
+@mixin gradien($x: -3%, $y: 71%) {
+    background: -webkit-radial-gradient($x $y, farthest-corner,#ABEDD8 0%, #69D2CF 35%, #69D2CF 35%, #3FC1C9 58%); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient($x $y, farthest-corner,#ABEDD8 0%, #69D2CF 35%, #69D2CF 35%, #3FC1C9 58%); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient($x $y, farthest-corner,#ABEDD8 0%, #69D2CF 35%, #69D2CF 35%, #3FC1C9 58%); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(farthest-corner at $x $y,#ABEDD8 0%, #69D2CF 35%, #69D2CF 35%, #3FC1C9 58%); /* Standard syntax (must be last) */
+
+}
+@mixin centerobj{
+  display: block;
+  margin:0 auto;
+}

@@ -1,0 +1,9 @@
+.box {
+	display: inline-block;
+}
+.box-left, .box-right {
+	display: inline-block;
+}
+.box.box-primary .box-left { 
+	border-right: 1px solid #f4f4f4;
+}

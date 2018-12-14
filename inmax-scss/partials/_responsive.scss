@@ -1,0 +1,95 @@
+
+@media only screen and (max-width: 1024px) {
+	header {
+		nav {
+			width: calc(100% - 54px);
+			padding: 0px 27px;
+
+			.phone {
+				display: none;
+			}
+		}
+
+	}
+	.sect-search {
+	    width: calc(100% - 54px);
+	    padding: 80px 27px 0px;
+
+	    .box-search {
+    	    width: calc(100% - 90px);
+
+    	    select.form-control {
+    	    	width: calc(19% - 12px);
+    	    }
+    	    input[type='text'] {
+    	    	width: calc(40% - 12px);
+    	    }
+    	    .button {
+    	    	width: 17%;
+    	    }
+	    }
+	}
+	.sect-property {
+		width: calc(100% - 54px);
+		padding: 0px 27px;
+
+		ul {
+			&.property {
+				li {
+					&.list-property {
+						margin-right: 36px;
+					    width: calc(33.3% - 24px);
+					    min-height: 596px;
+					}
+				}
+			}
+		}
+
+		.box-content {
+			height: 515px;
+			.box-content-left {
+				margin-right: 25px;
+				width: calc(38.5% - 25px);
+			}
+			.box-content-right {
+				width: 61.5%;	
+
+				a {
+					&.box-2 {
+						width: calc(50% - 15.5px);
+					}
+				}
+			}
+			.property-cat {
+				&.box-1 {
+					height: 515px;
+				}
+				&.box-2 {
+					height: 225px;
+
+				}
+				&.box-3 {
+					height: 259px;
+
+				}
+			}
+		}
+	}
+	footer {
+	    width: calc(100% - 54px);
+	    padding: 34px 27px 37px;
+		ul {
+			&.property {
+				width: 100px;
+				li {
+					&.list-property {
+						float: none;
+					}
+				}
+			}
+			&.custom {
+				margin-right: 60px;
+			}
+		}
+	}
+ }
